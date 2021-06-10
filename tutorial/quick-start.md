@@ -66,6 +66,41 @@ brew install grub
 
 2. 如果需要开启加速，需要将xbook2/Makefile中的QEMU_KVM := # no virutal注释掉，在最前面加一个#就可以了，变成#QEMU_KVM := # no virutal。
 
+## 初识xbook2
+
+首先，我们先看一下目录结构，了解一下代码构造。
+
+![源码目录](figures/source.png)
+
+| 目录名  |            描述            |
+| :-----: | :------------------------: |
+|   bin   |         可执行程序         |
+| develop |  开发时生成的一些临时文件  |
+|   doc   |         基础的文档         |
+|  libs   |           基础库           |
+|  sbin   |     管理员的可执行程序     |
+| scripts | 一些makefile脚本和配置脚本 |
+|   src   |     xbook2内核的源代码     |
+|  tools  |       常用的一些工具       |
+
+接下来进入src看看内核源码构造。
+
+![xbook src](figures/xbook.png)
+
+| 目录名  |           描述           |
+| :-----: | :----------------------: |
+|  arch   |      处理器平台相关      |
+| drivers | 驱动目录（平台无关驱动） |
+|   fs    |         文件系统         |
+| include |        内核头文件        |
+|  init   |        初始化程序        |
+|   ipc   |        进程间通信        |
+| kernel  |       内核其它模块       |
+|   lib   |     内核使用的一些库     |
+|   net   |         网络模块         |
+|  task   |   多任务（进程/线程）    |
+|   vmm   |       虚拟内存管理       |
+
 ## 编译运行
 
 ```bash
