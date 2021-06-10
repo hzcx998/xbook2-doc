@@ -1,0 +1,22 @@
+{
+    "title": "book for xbook2",
+    "author": "jason hu",
+    "description": "document for xbook2 kernel",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "bookos": "https://book-os.org"
+        }
+    },
+    "plugins": [
+        "tbfed-pagefooter"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+        "copyright":"Copyright &copy BookOS-developers 2021",
+        "modify_label": "修订时间：",
+        "modify_format": "YYYY-MM-DD"
+        }
+    }
+}
