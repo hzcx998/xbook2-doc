@@ -2,6 +2,8 @@
 
 # xbook2文档中心
 
+文档版本v0.1 基于xbook2 v0.2.0
+
   - 简介
     - [xbook2 简介](README.md)
 
